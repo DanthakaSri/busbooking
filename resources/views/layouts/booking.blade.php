@@ -47,12 +47,7 @@
                         </a>
                     </div>
                     <div class="col-md-3 col-md-offset-2">
-                        <form class="main-header-search">
-                            <div class="form-group form-group-icon-left">
-                                <i class="fa fa-search input-icon"></i>
-                                <input type="text" class="form-control">
-                            </div>
-                        </form>
+
                     </div>
 
                     @if(!Auth::guest())
@@ -63,9 +58,9 @@
                                         <a href="user-profile.html">
                                             <img class="origin round" src="{{asset('assets/img/40x40.png')}}"
                                                  alt="Image Alternative text"
-                                                 title="AMaze"/>Hi, John</a>
+                                                 title="AMaze"/>Hi, {{ Auth::user()->username }}</a>
                                     </li>
-                                    <li><a href="#">Sign Out</a>
+                                    <li><a href="{{ url('/logout') }}">Sign Out</a>
                                     </li>
 
                                 </ul>
@@ -90,51 +85,7 @@
                 </div>
             </div>
         </div>
-        {{--<div class="container">
-            <div class="nav">
-                <ul class="slimmenu" id="slimmenu">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="active"><a href="cars.html">Cars</a>
-                        <ul>
-                            <li><a href="car-details.html">Details</a>
-                            </li>
-                            <li><a href="car-payment.html">Payment</a>
-                                <ul>
-                                    <li><a href="car-payment.html">Registered</a>
-                                    </li>
-                                    <li><a href="car-payment-registered-card.html">Existed Cards</a>
-                                    </li>
-                                    <li><a href="car-payment-unregistered.html">Unregistered</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><a href="car-search.html">Search</a>
-                                <ul>
-                                    <li><a href="car-search.html">Layout 1</a>
-                                    </li>
-                                    <li><a href="car-search-2.html">Layout 2</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><a href="cars.html">Results</a>
-                                <ul>
-                                    <li><a href="cars.html">Layout 1</a>
-                                    </li>
-                                    <li><a href="cars-results-2.html">Layout 2</a>
-                                    </li>
-                                    <li><a href="cars-results-3.html">Layout 3</a>
-                                    </li>
-                                    <li><a href="cars-results-4.html">Layout 4</a>
-                                    </li>
-                                    <li><a href="cars-results-5.html">Layout 5</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>--}}
+
     </header>
 
     @section('page-title')
