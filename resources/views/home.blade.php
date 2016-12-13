@@ -14,7 +14,7 @@
     <div class="top-area show-onload">
         <div class="bg-holder full">
             <div class="bg-mask"></div>
-            <div class="bg-parallax" style="background-image:url(public/assets/img/2048x1365.png);"></div>
+            <div class="bg-parallax" style="background-image:url('public/assets/img/2048x1365.png');"></div>
             <div class="bg-content">
                 <div class="container">
                     <div class="row">
@@ -23,14 +23,14 @@
                                 <h1>Find Your Perfect Trip</h1>
                                 <div class="tabbable">
                                     <ul class="nav nav-tabs" id="myTab">
-                                        <li ><a href="#tab-1" data-toggle="tab"><i
-                                                        class="fa fa-car"></i> <span>Car</span></a>
+                                        <li><a href="#tab-1" data-toggle="tab"><i
+                                                        class="fa fa-car"></i> <span>Bus</span></a>
                                         </li>
 
                                     </ul>
                                     <div class="tab-content">
                                         <div class="tab-pane fade in active" id="tab-1">
-                                            <h2>Search for Cheap Rental Cars</h2>
+                                            <h2>Search for Cheap Rental Buss</h2>
                                             <form>
                                                 <div class="row">
                                                     <div class="col-md-6">
@@ -85,7 +85,7 @@
                                                     </div>
                                                 </div>
                                                 <button class="btn btn-primary btn-lg" type="submit">Search for Rental
-                                                    Cars
+                                                    Buses
                                                 </button>
                                             </form>
                                         </div>
@@ -175,72 +175,205 @@
             </div>
         </div>
     </div>
+
     <div class="container">
         <div class="gap"></div>
-        <h2 class="text-center">Top Destinations</h2>
-        <div class="gap">
-            <div class="row row-wrap">
-                <div class="col-md-3">
-                    <div class="thumb">
-                        <header class="thumb-header">
-                            <a class="hover-img curved" href="#">
-                                <img src="img/800x600.png" alt="Image Alternative text"
-                                     title="Upper Lake in New York Central Park"/><i
-                                        class="fa fa-plus box-icon-white box-icon-border hover-icon-top-right round"></i>
-                            </a>
-                        </header>
-                        <div class="thumb-caption">
-                            <h4 class="thumb-title">USA</h4>
-                            <p class="thumb-desc">Scelerisque montes class curabitur class aenean aliquam eu</p>
-                        </div>
+        <h1 class="text-center mb20">Last Minute Deals</h1>
+        <div class="row row-wrap">
+            <div class="col-md-4">
+                <div class="thumb">
+                    <header class="thumb-header">
+                        <a class="hover-img" href="#">
+                            <img src="{{ asset('/assets/img/800x600.png') }}" alt="Image Alternative text"
+                                 title="hotel PORTO BAY SERRA GOLF library"/>
+                            <h5 class="hover-title-center">Book Now</h5>
+                        </a>
+                    </header>
+                    <div class="thumb-caption">
+                        <ul class="icon-group text-tiny text-color">
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star-half-empty"></i>
+                            </li>
+                        </ul>
+                        <h5 class="thumb-title"><a class="text-darken" href="#">The Benjamin</a></h5>
+                        <p class="mb0">
+                            <small><i class="fa fa-map-marker"></i> New York, NY (Chelsea)</small>
+                        </p>
+                        <p class="mb0 text-darken"><span class="text-lg lh1em text-color">$394</span>
+                            <small> avg/night</small>
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="thumb">
-                        <header class="thumb-header">
-                            <a class="hover-img curved" href="#">
-                                <img src="img/800x600.png" alt="Image Alternative text"
-                                     title="lack of blue depresses me"/><i
-                                        class="fa fa-plus box-icon-white box-icon-border hover-icon-top-right round"></i>
-                            </a>
-                        </header>
-                        <div class="thumb-caption">
-                            <h4 class="thumb-title">Greece</h4>
-                            <p class="thumb-desc">Condimentum odio eget curabitur scelerisque vivamus ipsum congue</p>
-                        </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumb">
+                    <header class="thumb-header">
+                        <a class="hover-img" href="#">
+                            <img src="{{ asset('/assets/img/800x600.png') }}" alt="Image Alternative text"
+                                 title="hotel PORTO BAY RIO INTERNACIONAL de luxe"/>
+                            <h5 class="hover-title-center">Book Now</h5>
+                        </a>
+                    </header>
+                    <div class="thumb-caption">
+                        <ul class="icon-group text-tiny text-color">
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                        </ul>
+                        <h5 class="thumb-title"><a class="text-darken" href="#">The London NYC</a></h5>
+                        <p class="mb0">
+                            <small><i class="fa fa-map-marker"></i> New York, NY (Chelsea)</small>
+                        </p>
+                        <p class="mb0 text-darken"><span class="text-lg lh1em text-color">$355</span>
+                            <small> avg/night</small>
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="thumb">
-                        <header class="thumb-header">
-                            <a class="hover-img curved" href="#">
-                                <img src="img/800x600.png" alt="Image Alternative text" title="people on the beach"/><i
-                                        class="fa fa-plus box-icon-white box-icon-border hover-icon-top-right round"></i>
-                            </a>
-                        </header>
-                        <div class="thumb-caption">
-                            <h4 class="thumb-title">Australia</h4>
-                            <p class="thumb-desc">Ornare cras scelerisque volutpat nulla porttitor commodo cubilia</p>
-                        </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumb">
+                    <header class="thumb-header">
+                        <a class="hover-img" href="#">
+                            <img src="{{ asset('/assets/img/800x600.png') }}" alt="Image Alternative text"
+                                 title="hotel 1"/>
+                            <h5 class="hover-title-center">Book Now</h5>
+                        </a>
+                    </header>
+                    <div class="thumb-caption">
+                        <ul class="icon-group text-tiny text-color">
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star-half-empty"></i>
+                            </li>
+                        </ul>
+                        <h5 class="thumb-title"><a class="text-darken" href="#">InterContinental New York Barclay</a>
+                        </h5>
+                        <p class="mb0">
+                            <small><i class="fa fa-map-marker"></i> Ozone Park, NY (Kennedy Airport (JFK))</small>
+                        </p>
+                        <p class="mb0 text-darken"><span class="text-lg lh1em text-color">$213</span>
+                            <small> avg/night</small>
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="thumb">
-                        <header class="thumb-header">
-                            <a class="hover-img curved" href="#">
-                                <img src="img/400x300.png" alt="Image Alternative text" title="the journey home"/><i
-                                        class="fa fa-plus box-icon-white box-icon-border hover-icon-top-right round"></i>
-                            </a>
-                        </header>
-                        <div class="thumb-caption">
-                            <h4 class="thumb-title">Africa</h4>
-                            <p class="thumb-desc">Dictumst risus montes ipsum faucibus vel sodales cubilia</p>
-                        </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumb">
+                    <header class="thumb-header">
+                        <a class="hover-img" href="#">
+                            <img src="{{ asset('/assets/img/800x600.png') }}" alt="Image Alternative text"
+                                 title="hotel PORTO BAY SERRA GOLF suite2"/>
+                            <h5 class="hover-title-center">Book Now</h5>
+                        </a>
+                    </header>
+                    <div class="thumb-caption">
+                        <ul class="icon-group text-tiny text-color">
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star-o"></i>
+                            </li>
+                        </ul>
+                        <h5 class="thumb-title"><a class="text-darken" href="#">Affinia Shelburne</a></h5>
+                        <p class="mb0">
+                            <small><i class="fa fa-map-marker"></i> Brooklyn, NY (Brooklyn)</small>
+                        </p>
+                        <p class="mb0 text-darken"><span class="text-lg lh1em text-color">$238</span>
+                            <small> avg/night</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumb">
+                    <header class="thumb-header">
+                        <a class="hover-img" href="#">
+                            <img src="{{ asset('/assets/img/800x600.png') }}" alt="Image Alternative text"
+                                 title="hotel 2"/>
+                            <h5 class="hover-title-center">Book Now</h5>
+                        </a>
+                    </header>
+                    <div class="thumb-caption">
+                        <ul class="icon-group text-tiny text-color">
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star-half-empty"></i>
+                            </li>
+                        </ul>
+                        <h5 class="thumb-title"><a class="text-darken" href="#">New York Hilton Midtown</a></h5>
+                        <p class="mb0">
+                            <small><i class="fa fa-map-marker"></i> New York, NY (Midtown East)</small>
+                        </p>
+                        <p class="mb0 text-darken"><span class="text-lg lh1em text-color">$438</span>
+                            <small> avg/night</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumb">
+                    <header class="thumb-header">
+                        <a class="hover-img" href="#">
+                            <img src="{{ asset('/assets/img/800x600.png') }}" alt="Image Alternative text"
+                                 title="hotel THE CLIFF BAY spa suite"/>
+                            <h5 class="hover-title-center">Book Now</h5>
+                        </a>
+                    </header>
+                    <div class="thumb-caption">
+                        <ul class="icon-group text-tiny text-color">
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star"></i>
+                            </li>
+                            <li><i class="fa fa-star-half-empty"></i>
+                            </li>
+                        </ul>
+                        <h5 class="thumb-title"><a class="text-darken" href="#">Wellington Hotel</a></h5>
+                        <p class="mb0">
+                            <small><i class="fa fa-map-marker"></i> New York, NY (Downtown - Wall Street)</small>
+                        </p>
+                        <p class="mb0 text-darken"><span class="text-lg lh1em text-color">$210</span>
+                            <small> avg/night</small>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-
-
+        <div class="gap gap-small"></div>
     </div>
 @endsection
